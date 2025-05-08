@@ -3,11 +3,20 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 
 import Avatar from "../../assets/avatar.png"
 import Image from "astro/components/Image.astro";
+import Button from "../components/Button.astro";
 ---
 
 <BaseLayout>
-	<section class="flex min-h-screen flex-col items-center bg-[#0A1045]">
-		<Image src={Avatar} height={100}  width={100} alt={"Logotipo da Hapvida"}/>
-		<h1 class="font-montserrat text-3xl text-white">Hapvida</h1>
+	<section class="flex min-h-screen flex-col items-center bg-[#0A1045] min-w-screen gap-10">
+		<Image src={Avatar} height={100}  width={100} alt={"Logotipo da Hapvida"} class="mt-20"/>
+		<h1 class="font-montserrat text-4xl text-white font-bold">Hapvida</h1>
+
+		<article class="flex flex-col gap-7 justify-center items-center">
+			<Button href="/">SEGUNDA VIA DA MENSALIDADE</Button>
+			<Button href="/">MENSALIDADE EM ATRASO</Button>
+			<Button href="/">MARCAR EXAME</Button>
+			<Button href="/">SOLICITAR ATENDIMENTO</Button>
+			<Button href="/">POLITICA DE PRIVACIDADE</Button>
+		</article>
 	</section>
 </BaseLayout>
