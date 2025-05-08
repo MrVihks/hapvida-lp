@@ -4,4 +4,18 @@
 @theme {
     --font-montserrat: "Montserrat", cursive; 
     --font-inter: "Inter", sans-serif; 
+    --color-brand:#0A1045;
+}
+
+h1{
+    font-weight: 800;
+    font-size: 2.0em;
+}
+h2{
+    font-weight: 600;
+    font-size: 1.4em;
+}
+p{
+    font-size: 1.1em;
+    margin:10px;
 }
